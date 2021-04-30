@@ -12,12 +12,38 @@
 			.navbar .nav-item:hover .dropdown-menu{ display: block; }
 			.navbar .nav-item .dropdown-menu{ margin-top:0; }
 		}
-		.submenu-width {
-
-			width: 800px;
-		}
 		.nav.flex-column li a img, .dropdown-menu li a img{
 			width: 20px;
+		}
+		.submenu-width {
+				width: 800px;
+			}
+
+		@media (max-width: 575.98px) { 
+			.submenu-width {
+				/*width: 800px;*/
+				width: 100%;
+			}
+		}
+		@media (max-width: 767.98px) {
+			.submenu-width {
+				width: 100%;
+			}
+		}
+		@media (max-width: 991.98px) {
+			.submenu-width {
+				width: 100%;
+			}
+		}
+		@media (max-width: 1199.98px) {
+			.submenu-width {
+				width: 100%;
+			}
+		}
+		@media (max-width: 1399.98px) {
+			.submenu-width {
+				width: 100%;
+			}
 		}
 	</style>
 </head>
@@ -46,7 +72,7 @@
 						<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover me </a>
 						<div class="dropdown-menu submenu-width">
 							<div class="row p-2">
-								<div class="col-4">
+								<div class="col-md-4 mb-2">
 									<ul class="nav flex-column">
 										<li class="nav-item">
 											<a class="dropdown-item" href="#">
@@ -68,7 +94,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-4">
+								<div class="col-md-4 mb-2">
 									<ul class="nav flex-column">
 										<li class="nav-item">
 											<a class="dropdown-item" href="#">b1</a>
@@ -84,7 +110,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-4">
+								<div class="col-md-4 mb-2">
 									<ul class="nav flex-column">
 										<li class="nav-item">
 											<a class="dropdown-item" href="#">c1</a>
